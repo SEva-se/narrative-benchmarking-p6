@@ -1,0 +1,25 @@
+{
+  "provider": "chat_completions",
+  "model": "REPLACE_WITH_EXACT_MODEL_ID",
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "api_key_env": "NARRATIVE_API_KEY",
+  "timeout_seconds": 60,
+  "delay_seconds": 1,
+  "max_api_calls": 20,
+  "max_attempts_per_record": 2,
+  "max_input_chars": 40000,
+  "example_ids": [],
+  "parameters": {
+    "max_completion_tokens": 700,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "pricing_usd_per_million": {
+    "input": null,
+    "output": null,
+    "cached_input": null
+  },
+  "pricing_source": "REPLACE_WITH_PROVIDER_PRICING_URL_AND_DATE",
+  "notes": "Endpoint is an example, not a verified account connection. Verify parameter support for the selected model/provider. Missing price remains unknown. max_api_calls limits requests including retries, not dollar charges."
+}

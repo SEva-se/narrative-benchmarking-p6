@@ -1,0 +1,4 @@
+﻿id,article_id,text,gold,predicted,valid,error_type,analyst_note
+demo-test-05,demo-test-05,The article criticizes costly climate policies and argues that solar panels create waste.,CC_POLICY;CC_TECH,CC_TECH,True,,
+demo-test-06,demo-test-06,The timetable gives the departure time of the last evening train.,,CC_SCIENCE,True,,
+demo-test-07,demo-test-07,The paragraph announces a science museum tour without discussing climate evidence.,,CC_SCIENCE,True,,

@@ -1,0 +1,57 @@
+{
+  "version": "research-climate-coarse-draft-v0",
+  "status": "RESEARCHER-WRITTEN DRAFT. Category names follow PolyNarrative Figure 3. Definitions are paraphrased working definitions, not official annotation guidelines. Verify against the actual licensed release before use. Do not compare scores with published results until mappings and Other conventions match.",
+  "source": "https://aclanthology.org/2025.acl-long.1513/",
+  "labels": [
+    {
+      "id": "climate_policies",
+      "name": "Criticism of climate policies",
+      "definition": "Arguments that climate policies are ineffective, economically damaging, or driven by profit."
+    },
+    {
+      "id": "institutions",
+      "name": "Criticism of institutions and authorities",
+      "definition": "Arguments challenging the credibility or conduct of institutions and authorities in climate matters."
+    },
+    {
+      "id": "beneficial",
+      "name": "Climate change is beneficial",
+      "definition": "Arguments presenting warming or increased carbon dioxide as beneficial."
+    },
+    {
+      "id": "downplaying",
+      "name": "Downplaying climate change",
+      "definition": "Arguments minimizing climate change, its scale, human contribution, or impacts."
+    },
+    {
+      "id": "science",
+      "name": "Questioning the measurements and science",
+      "definition": "Arguments contesting climate measurements, methods, scientific evidence, or scientific credibility."
+    },
+    {
+      "id": "movement",
+      "name": "Criticism of climate movement",
+      "definition": "Arguments attacking climate activists or the climate movement."
+    },
+    {
+      "id": "green_technology",
+      "name": "Controversy about green technologies",
+      "definition": "Arguments contesting the safety, reliability, or environmental benefits of green technologies."
+    },
+    {
+      "id": "hidden_plots",
+      "name": "Hidden plots by secret schemes of powerful groups",
+      "definition": "Arguments alleging hidden motives or secret coordination by powerful groups behind climate action."
+    },
+    {
+      "id": "fears",
+      "name": "Amplifying Climate Fears",
+      "definition": "Arguments amplifying climate fears or presenting extreme catastrophic or fatalistic outcomes."
+    },
+    {
+      "id": "geopolitics",
+      "name": "Green policies are geopolitical instruments",
+      "definition": "Arguments portraying climate policies as instruments of geopolitical domination or exploitation."
+    }
+  ]
+}

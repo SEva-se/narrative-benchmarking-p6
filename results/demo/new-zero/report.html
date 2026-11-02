@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Narrative benchmark report</title><style>
+body{font:17px/1.65 system-ui,sans-serif;max-width:1040px;margin:48px auto;padding:0 28px;color:#15283b;background:#fafaf7}
+h1{font-size:42px;line-height:1.15}h2{margin-top:40px}aside{padding:18px 22px;background:#fff0cd;border-left:5px solid #ba7200}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,th{text-align:left;padding:11px;border-bottom:1px solid #cdd5db}th{color:#32556a}code{word-break:break-all;font-size:13px}dt{font-weight:700;margin-top:12px}dd{margin-left:0}a{color:#006c70}
+</style><h1>Narrative benchmark</h1><p>synthetic-keyword-fixture / zero / new</p>
+<aside>SYNTHETIC DEMONSTRATION. These scores do not measure LLM capability or constitute research findings.</aside><h2>Classification</h2><dl>
+<dt>Macro-F1, all taxonomy labels</dt><dd>0.917</dd>
+<dt>Macro-F1, labels present in gold</dt><dd>0.917</dd>
+<dt>Micro-F1</dt><dd>0.889</dd>
+<dt>Valid output coverage</dt><dd>6 / 6</dd>
+<dt>End-to-end exact match</dt><dd>0.833</dd></dl>
+<p>Invalid and missing predictions count as empty label sets for F1. End-to-end exact match always counts them as failures. Absent-label F1 and empty/empty sample F1 use zero.</p>
+<table><thead><tr><th>Label</th><th>Gold support</th><th>Precision</th><th>Recall</th><th>F1</th></tr></thead><tbody><tr><td>CC_DOWNPLAY</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr><tr><td>CC_POLICY</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr><tr><td>CC_SCIENCE</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr><tr><td>CC_TECH</td><td>1</td><td>0.500</td><td>1.000</td><td>0.667</td></tr></tbody></table>
+<h2>Resources</h2><p>Estimated list-price cost: $0.000000. Attempts with unknown cost: 0.</p>
+<p>Record median: 0.0010454999865032732 seconds. p95: 0.0016656000007060356 seconds. These describe the deployment and include retry time.</p>
+<h2>Evidence review</h2><p>Semantic support has not been scored automatically. Review evidence_review.csv independently. Exact quotation alone does not establish support for a label or internal model reasoning.</p>
+<h2>Uncertainty and provenance</h2><p>{&#x27;metric&#x27;: &#x27;macro_f1_all_labels&#x27;, &#x27;interval&#x27;: [0.25, 1.0], &#x27;iterations&#x27;: 100, &#x27;seed&#x27;: 42, &#x27;unit&#x27;: &#x27;article&#x27;, &#x27;articles&#x27;: 6, &#x27;caution&#x27;: &#x27;Exploratory percentile interval; rare-label absence affects macro-F1 in resamples&#x27;}</p><p>Run fingerprint: <code>273946c57ac0a0f52c71a565f7a912e916d18bc811fd0115ddfeddaf9b8a2a7f</code></p>
+<p><a href="metrics.json">Machine-readable metrics</a> / <a href="errors.csv">Error analysis</a> / <a href="evidence_review.csv">Human evidence review</a></p></html>

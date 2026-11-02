@@ -1,0 +1,34 @@
+{
+  "package_version": "0.1.0",
+  "prepared_on": "2026-11-01",
+  "source_sha256": "74f2848076d4168780614430836e55608ccc7a068eabe7ebda687f46daca321c",
+  "checks": {
+    "unittest_tests_passed": 32,
+    "http_transport": "local test server only, no external API",
+    "offline_demo_runs": 6,
+    "demo_records": 35,
+    "presentation_slides": 21,
+    "presentation_notes": 21,
+    "visually_reviewed_slides": 21,
+    "relative_document_links": "all valid",
+    "demo_resume": "verified without additional attempts",
+    "english_documentation_files": 9,
+    "english_speaker_notes": 21,
+    "implementation_unchanged": true,
+    "no_cyrillic_in_delivered_text": true,
+    "slide_renders_identical_to_original": true,
+    "english_copy_tests_passed": 32,
+    "english_copy_smoke_test": "validate, run and evaluate passed"
+  },
+  "scope": "Implementation and research-preparation package; not completed empirical research",
+  "not_performed": [
+    "real model/API capability benchmark",
+    "PolyNarrative raw release integration",
+    "new real-corpus collection and independent annotation",
+    "native PowerPoint execution"
+  ],
+  "presentation_sha256": "d536849cae0f54bc302f62fca27b6891e0df4d3cad5066c5886a23a2c4bcce92",
+  "language": "English",
+  "english_edition_on": "2026-11-02",
+  "original_prepared_on": "2026-11-01"
+}

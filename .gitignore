@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+configs/*.local.json
+data/research/
+results/research/
+.run.lock
+tests/.tmp/

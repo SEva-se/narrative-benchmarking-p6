@@ -1,0 +1,2 @@
+﻿id,article_id,text,gold,predicted,valid,error_type,analyst_note
+demo-test-07,demo-test-07,The paragraph announces a science museum tour without discussing climate evidence.,,CC_SCIENCE,True,,

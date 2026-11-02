@@ -1,0 +1,14 @@
+{
+  "provider": "demo",
+  "model": "synthetic-keyword-fixture",
+  "max_api_calls": 100,
+  "max_attempts_per_record": 1,
+  "example_ids": [
+    "demo-train-01",
+    "demo-train-04",
+    "demo-train-07",
+    "demo-train-10",
+    "demo-train-13"
+  ],
+  "parameters": {}
+}

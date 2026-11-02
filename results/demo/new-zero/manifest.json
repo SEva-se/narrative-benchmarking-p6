@@ -1,0 +1,57 @@
+{
+  "records": 35,
+  "articles": 35,
+  "splits": {
+    "train": 15,
+    "dev": 6,
+    "test": 8,
+    "new": 6
+  },
+  "dataset_kind": "synthetic_demo",
+  "dataset_sha256": "c4c4ffd87ec6507b4f44e671c58bdd486a3ecc1dd6e22cd5bd729dba54d7e503",
+  "taxonomy_sha256": "faebf822cbf31cc28c3ace2f7013b8d9c219e0237597445929f3c100ee1c0866",
+  "software_version": "0.1.0",
+  "source_sha256": "74f2848076d4168780614430836e55608ccc7a068eabe7ebda687f46daca321c",
+  "prompt_version": "paragraph-evidence-v1",
+  "config": {
+    "provider": "demo",
+    "model": "synthetic-keyword-fixture",
+    "max_api_calls": 100,
+    "max_attempts_per_record": 1,
+    "example_ids": [
+      "demo-train-01",
+      "demo-train-04",
+      "demo-train-07",
+      "demo-train-10",
+      "demo-train-13"
+    ],
+    "parameters": {}
+  },
+  "split": "new",
+  "variant": "zero",
+  "seed": 42,
+  "selected_ids": [
+    "demo-new-04",
+    "demo-new-02",
+    "demo-new-03",
+    "demo-new-05",
+    "demo-new-01",
+    "demo-new-06"
+  ],
+  "request_hashes": [
+    "c14bceef388522a3cb085ccb897c04cf5a1a3f937549839ab347bf441325de17",
+    "6f367248dec9809b6c29675b389597d56e490735bff57fc4f735a492f382f419",
+    "12ed721370f9c11527189bc43ed5ca7a4e1b3676835062f71e8b208076f57ed0",
+    "ec6d84ace2141ebf4eeb9fbc11f3506dd419ae9e35bee6fa46a7005a91398f0e",
+    "c9b549362d2d2dcaa806822e1d1df9f70df6a793ef1ffe63e813ad57e89ff7f4",
+    "8115157dce0e6c54a606796139fd0c97059a8bb890dc34e0de2dd3ed29e5f01e"
+  ],
+  "fingerprint": "273946c57ac0a0f52c71a565f7a912e916d18bc811fd0115ddfeddaf9b8a2a7f",
+  "created_utc": "2026-11-01T19:48:12.647879+00:00",
+  "python": "3.13.9",
+  "status": "complete",
+  "interpretation": "DEMO ONLY",
+  "updated_utc": "2026-11-01T19:48:12.668037+00:00",
+  "finished_records": 6,
+  "api_attempts": 6
+}

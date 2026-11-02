@@ -1,0 +1,4 @@
+﻿run,model,variant,dataset_kind,macro_f1_all_labels,micro_f1,valid_rate,cost_usd_estimate,median_record_seconds,p95_record_seconds
+results/demo/test-zero,synthetic-keyword-fixture,zero,synthetic_demo,0.9166666666666666,0.9230769230769231,1.0,0,0.0009852999937720597,0.0014059200068004428
+results/demo/test-few,synthetic-keyword-fixture,few,synthetic_demo,0.9166666666666666,0.9230769230769231,1.0,0,0.0009823500004131347,0.0014229599881218746
+results/demo/test-baseline,tfidf-centroid,centroid,synthetic_demo,0.7916666666666666,0.7692307692307693,1.0,0,2.8399997972883284e-05,6.583001086255533e-05

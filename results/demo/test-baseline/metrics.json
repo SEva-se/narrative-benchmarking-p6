@@ -1,0 +1,98 @@
+{
+  "dataset_kind": "synthetic_demo",
+  "interpretation": "DEMO ONLY",
+  "run_fingerprint": "8d61674ceafbad118a04203e318dbfce49b3b497d2292313a0d42bd474d84279",
+  "split": "test",
+  "model": "tfidf-centroid",
+  "variant": "centroid",
+  "classification": {
+    "n": 8,
+    "macro_f1_all_labels": 0.7916666666666666,
+    "macro_f1_present_gold": 0.7916666666666666,
+    "micro_f1": 0.7692307692307693,
+    "micro_precision": 0.7142857142857143,
+    "micro_recall": 0.8333333333333334,
+    "sample_f1_empty_empty_zero": 0.5833333333333334,
+    "exact_match": 0.625,
+    "gold_negative_records": 3,
+    "by_label": {
+      "CC_DOWNPLAY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "CC_POLICY": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 2,
+        "tp": 1,
+        "fp": 0,
+        "fn": 1
+      },
+      "CC_SCIENCE": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "support": 1,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0
+      },
+      "CC_TECH": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "coverage": {
+    "selected": 8,
+    "valid": 8,
+    "invalid_or_missing": 0,
+    "missing": 0,
+    "valid_rate": 1.0,
+    "end_to_end_exact_match": 0.625
+  },
+  "bootstrap": {
+    "metric": "macro_f1_all_labels",
+    "interval": [
+      0.3270833333333333,
+      0.9440624999999998
+    ],
+    "iterations": 100,
+    "seed": 42,
+    "unit": "article",
+    "articles": 8,
+    "caution": "Exploratory percentile interval; rare-label absence affects macro-F1 in resamples"
+  },
+  "evidence": {
+    "quotes_in_valid_outputs": 7,
+    "exact_quotes": 7,
+    "semantic_support_score": null,
+    "note": "Quote membership is checked. Semantic support requires blinded human review; invalid outputs remain failures."
+  },
+  "resources": {
+    "attempts": 0,
+    "observed_usage_subtotal": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "cost_usd_estimate": 0,
+    "known_cost_usd_lower_bound": 0,
+    "attempts_with_unknown_cost": 0,
+    "median_record_seconds": 2.8399997972883284e-05,
+    "p95_record_seconds": 6.583001086255533e-05,
+    "latency_definition": "Record wall time including retries/backoff, excluding inter-record delay",
+    "cost_definition": "Configured list-price estimate, not an invoice; usage subtotal may be incomplete"
+  },
+  "warning": "SYNTHETIC DEMONSTRATION. These scores do not measure LLM capability or constitute research findings."
+}

@@ -1,0 +1,98 @@
+{
+  "dataset_kind": "synthetic_demo",
+  "interpretation": "DEMO ONLY",
+  "run_fingerprint": "273946c57ac0a0f52c71a565f7a912e916d18bc811fd0115ddfeddaf9b8a2a7f",
+  "split": "new",
+  "model": "synthetic-keyword-fixture",
+  "variant": "zero",
+  "classification": {
+    "n": 6,
+    "macro_f1_all_labels": 0.9166666666666666,
+    "macro_f1_present_gold": 0.9166666666666666,
+    "micro_f1": 0.8888888888888888,
+    "micro_precision": 0.8,
+    "micro_recall": 1.0,
+    "sample_f1_empty_empty_zero": 0.6666666666666666,
+    "exact_match": 0.8333333333333334,
+    "gold_negative_records": 2,
+    "by_label": {
+      "CC_DOWNPLAY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "CC_POLICY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "CC_SCIENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "CC_TECH": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "support": 1,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0
+      }
+    }
+  },
+  "coverage": {
+    "selected": 6,
+    "valid": 6,
+    "invalid_or_missing": 0,
+    "missing": 0,
+    "valid_rate": 1.0,
+    "end_to_end_exact_match": 0.8333333333333334
+  },
+  "bootstrap": {
+    "metric": "macro_f1_all_labels",
+    "interval": [
+      0.25,
+      1.0
+    ],
+    "iterations": 100,
+    "seed": 42,
+    "unit": "article",
+    "articles": 6,
+    "caution": "Exploratory percentile interval; rare-label absence affects macro-F1 in resamples"
+  },
+  "evidence": {
+    "quotes_in_valid_outputs": 5,
+    "exact_quotes": 5,
+    "semantic_support_score": null,
+    "note": "Quote membership is checked. Semantic support requires blinded human review; invalid outputs remain failures."
+  },
+  "resources": {
+    "attempts": 6,
+    "observed_usage_subtotal": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "cost_usd_estimate": 0,
+    "known_cost_usd_lower_bound": 0,
+    "attempts_with_unknown_cost": 0,
+    "median_record_seconds": 0.0010454999865032732,
+    "p95_record_seconds": 0.0016656000007060356,
+    "latency_definition": "Record wall time including retries/backoff, excluding inter-record delay",
+    "cost_definition": "Configured list-price estimate, not an invoice; usage subtotal may be incomplete"
+  },
+  "warning": "SYNTHETIC DEMONSTRATION. These scores do not measure LLM capability or constitute research findings."
+}

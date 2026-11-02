@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narrative-benchmark-lab"
+version = "0.1.0"
+description = "API-based narrative classification and evidence extraction benchmark"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+narrative-bench = "narrative_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["narrative_bench*"]

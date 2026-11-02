@@ -1,0 +1,15 @@
+{
+  "dataset_name": "TO_COMPLETE",
+  "release": "TO_COMPLETE",
+  "retrieved_on": "TO_COMPLETE",
+  "source_url": "TO_COMPLETE",
+  "license_or_access_terms": "TO_COMPLETE",
+  "source_files_sha256": {},
+  "taxonomy_version": "TO_COMPLETE",
+  "conversion_rules": "TO_COMPLETE",
+  "paragraph_context_rule": "TO_COMPLETE",
+  "other_label_rule": "TO_COMPLETE",
+  "exclusions": [],
+  "split_policy": "Article-disjoint train/dev/test. Separate newly collected corpus.",
+  "annotators": "TO_COMPLETE"
+}

@@ -1,0 +1,36 @@
+{
+  "records": 35,
+  "articles": 35,
+  "splits": {
+    "train": 15,
+    "dev": 6,
+    "test": 8,
+    "new": 6
+  },
+  "dataset_kind": "synthetic_demo",
+  "dataset_sha256": "c4c4ffd87ec6507b4f44e671c58bdd486a3ecc1dd6e22cd5bd729dba54d7e503",
+  "taxonomy_sha256": "faebf822cbf31cc28c3ace2f7013b8d9c219e0237597445929f3c100ee1c0866",
+  "source_sha256": "74f2848076d4168780614430836e55608ccc7a068eabe7ebda687f46daca321c",
+  "selected_ids": [
+    "demo-test-01",
+    "demo-test-02",
+    "demo-test-03",
+    "demo-test-04",
+    "demo-test-05",
+    "demo-test-06",
+    "demo-test-07",
+    "demo-test-08"
+  ],
+  "config": {
+    "provider": "local_cpu",
+    "model": "tfidf-centroid",
+    "threshold": 0.3,
+    "threshold_selection": "dev macro-F1 over labels with positive gold support, ties prefer higher threshold"
+  },
+  "split": "test",
+  "variant": "centroid",
+  "created_utc": "2026-11-01T19:48:12.558583+00:00",
+  "status": "complete",
+  "interpretation": "DEMO ONLY",
+  "fingerprint": "8d61674ceafbad118a04203e318dbfce49b3b497d2292313a0d42bd474d84279"
+}

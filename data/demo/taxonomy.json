@@ -1,0 +1,26 @@
+{
+  "version": "synthetic-climate-teaching-v1",
+  "status": "Teaching taxonomy with four adapted categories. Not the full official PolyNarrative codebook.",
+  "labels": [
+    {
+      "id": "CC_POLICY",
+      "name": "Criticism of climate policies",
+      "definition": "The paragraph argues that a climate policy is ineffective, costly, unfair or otherwise harmful."
+    },
+    {
+      "id": "CC_SCIENCE",
+      "name": "Questioning measurements and science",
+      "definition": "The paragraph challenges climate measurements, scientific methods, or the trustworthiness of climate science."
+    },
+    {
+      "id": "CC_DOWNPLAY",
+      "name": "Downplaying climate change",
+      "definition": "The paragraph presents climate change or its consequences as exaggerated, minor, or merely a natural cycle."
+    },
+    {
+      "id": "CC_TECH",
+      "name": "Controversy about green technologies",
+      "definition": "The paragraph argues that renewable or other green technologies are unreliable, unsafe or harmful."
+    }
+  ]
+}
