@@ -1,0 +1,10 @@
+{
+  "model": "REPLACE_WITH_EXACT_PROVIDER_MODEL_ID",
+  "endpoint": "https://YOUR_PROVIDER_HOST/v1/chat/completions",
+  "api_key_env": "POLYNARRATIVE_API_KEY",
+  "parameters": {"temperature": 0, "max_tokens": 4096},
+  "timeout_seconds": 120,
+  "max_input_chars": 60000,
+  "max_api_calls": 5,
+  "pricing_usd_per_million": {"input": null, "output": null, "cached_input": null}
+}

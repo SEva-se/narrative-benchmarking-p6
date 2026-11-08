@@ -1,0 +1,18 @@
+You are an experienced analyst making
+labeling articles with labels specific to
+the war in Ukraine.
+Labels:
+{codebook_urw}
+You will apply a label to each paragraph
+if it presents at any point a narrative
+that is given in the above list.
+The beginning of each paragraph is
+marked by a [paragraph_X:] tag.
+Answer strictly only with the paragraph
+tag and the name of the labels detected
+and not anything else. If you find no
+label, just output 'Other'. Strip down
+the markdown artifacts. Join the labels
+with semicolon.
+Do not output anything from the
+text.

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+*.local.json
+data/private/
+results/live/
+results/private/
+.run.lock

@@ -4,6 +4,8 @@
 
 Author: Vsevolod Drabych and project group. Package version: 0.1.0. Original package prepared on 1 November 2026; English edition prepared on 2 November 2026.
 
+**Proposed first practical experiment (8 November 2026): [Reproduce PolyNarrative Experiment](experiments/reproduce-polynarrative/README.md).** This separate package implements a narrowed, labels-only English URW experiment derived from the paper. It includes an importer, original-format prompting, API runner, scoring and 22 offline tests. Approved data/gold and an actual model run are still pending. Read its reproduction protocol for differences from the paper. The original materials below remain an earlier project proposal and synthetic demonstration, not a completed replication or a finalized team decision.
+
 The project compares API-based models on paragraph-level narrative classification and extraction of supporting source evidence. Evaluation covers quality, output usability, cost and latency. Frozen configurations are subsequently tested on a separately collected and independently annotated sample.
 
 **Status:** the implementation works on teaching data, including an HTTP adapter tested against a local server. Real API experiments and PolyNarrative validation have not yet been performed. Data access, exact models, prices and budget still need to be confirmed. The presentation describes the proposed study and implemented method, rather than completed empirical findings.
