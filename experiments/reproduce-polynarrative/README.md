@@ -8,6 +8,10 @@ Scope: **English, Ukraine-Russia War (URW), labels-only zero-shot prompting**. A
 
 This provides an implementable first slice, not a recreation of all domains/languages/models/prompting conditions in Table 4. In particular, paragraph-to-document aggregation is an explicit adaptation: it must not be presented as a verified recreation of the paper's separate document-level configuration.
 
+Local readiness update: the user supplied the official development articles, cleaned gold and scorer archive. A 17-article English URW selection has been prepared privately. Source files, gold and previews are not included in this repository. The importer now deduplicates repeated gold labels as sets, recording the removed-occurrence count and retaining source hashes. No label strings are remapped. This fixes a real-release compatibility issue; 23 software tests pass.
+
+Document sample-F1 was also checked against the official ST2 scorer in six fine/coarse sanity cases on the prepared release. The results matched. This does not establish Macro-F1 parity or full experimental equivalence.
+
 ## What was verified on 8 November 2026
 
 - The [paper](https://aclanthology.org/2025.acl-long.1513/) describes XLM-R fine-tuning and four Llama 3.1-70B prompting variants. Section 5 and Appendix C are the implementation sources.

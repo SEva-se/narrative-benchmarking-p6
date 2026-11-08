@@ -1,7 +1,7 @@
 {
   "checked_date": "2026-11-08",
   "status": "implementation_prepared_real_reproduction_pending",
-  "tests_passed": 22,
+  "tests_passed": 23,
   "validation": [
     "stdlib unit tests",
     "localhost HTTP stub",
@@ -9,7 +9,8 @@
     "CLI validate and preview"
   ],
   "real_api_calls": 0,
-  "real_dataset_obtained": false,
+  "real_dataset_obtained": true,
+  "real_dataset_bundled": false,
   "official_author_code_obtained": false,
   "paper": "https://aclanthology.org/2025.acl-long.1513/",
   "files": [
@@ -27,19 +28,19 @@
     },
     {
       "path": "README.md",
-      "sha256": "8e748941f685b48783cd9f2b3914862bd6f4134e65e3af523354842876261dae"
+      "sha256": "2278f3611fbae21b32e9dc7b25b20073eaaa2e1c849ed86010d5229c927a9fb4"
     },
     {
       "path": "reproduce.py",
-      "sha256": "3bf2fc50a58a62620be567a49e6ec99832679eecb38f40df0b7381db37bfa510"
+      "sha256": "279611dcbb8cec23355b5217468031678b4114d26e4e5cc9dbb3d3ea6a1facea"
     },
     {
       "path": "REPRODUCTION_PROTOCOL.md",
-      "sha256": "117902c8d0893fe250958c0461c9c177098fa9fee299adf3c55b346bcdb1cc4e"
+      "sha256": "749d9463a18f5e04fc7a9a28cc393df64f2900e6d270b06f660d756a319a18cc"
     },
     {
       "path": "STATUS.md",
-      "sha256": "16ec1f21702433df707b10e76cc96d9babe2af855c79f8b661d7f058cb17f1ff"
+      "sha256": "65364c37d3fe97e956c15b56d709848a33f388133efb1c9cf3d1462055532828"
     },
     {
       "path": "taxonomy_urw.json",
@@ -47,7 +48,7 @@
     },
     {
       "path": "test_reproduce.py",
-      "sha256": "ed5888f03faac5390cdf0e417a24601f2d6192ef289bf1c776ecf9b1c02ede63"
+      "sha256": "f92ead9155f39d342fcb41538d0184256bd1934824e507c1c124ba5a124764ce"
     }
   ]
 }

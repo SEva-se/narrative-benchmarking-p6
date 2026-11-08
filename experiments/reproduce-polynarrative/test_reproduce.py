@@ -128,6 +128,18 @@ class DataAndScoringTests(unittest.TestCase):
             self.assertFalse(data["metadata"]["paper_test_mapping_confirmed"])
             self.assertEqual(data["metadata"]["source_gold_sha256"], r.file_hash(root / "gold.tsv"))
 
+    def test_prepare_deduplicates_repeated_release_labels(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            parent = TAX["parent_by_fine"][A]
+            (root / "EN_1.txt").write_text("Fictional article.", encoding="utf-8")
+            (root / "gold.tsv").write_text(f"EN_1.txt\t{parent};{parent}\t{A};{A}\n", encoding="utf-8")
+            (root / "ids.txt").write_text("EN_1.txt\n", encoding="utf-8")
+            r.prepare(root, root / "gold.tsv", root / "ids.txt", root / "data.json", "fixture", "test", False)
+            data = r.load(root / "data.json")
+            self.assertEqual(data["articles"][0]["gold_fine"], [A])
+            self.assertEqual(data["metadata"]["duplicate_gold_label_occurrences_removed"], 2)
+
     def test_preview_input_cap(self):
         cfg = config()
         cfg["max_input_chars"] = 10

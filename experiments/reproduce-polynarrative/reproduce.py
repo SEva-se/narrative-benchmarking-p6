@@ -116,6 +116,8 @@ def prepare(articles, gold, ids, output, release, note, confirmed):
     if not selected or len(selected) != len(set(selected)):
         raise ValueError("Provide a unique nonempty list of English URW article filenames")
     annotations = {}
+    duplicate_counts = {}
+    duplicate_label_occurrences = 0
     with Path(gold).open(encoding="utf-8-sig", newline="") as f:
         for n, fields in enumerate(csv.reader(f, delimiter="\t"), 1):
             if not fields:
@@ -125,7 +127,11 @@ def prepare(articles, gold, ids, output, release, note, confirmed):
             aid, coarse, fine = fields
             if aid in annotations:
                 raise ValueError("Duplicate gold article ID")
-            annotations[aid] = ([x.strip() for x in coarse.split(";")], [x.strip() for x in fine.split(";")])
+            parts = ([x.strip() for x in coarse.split(";")], [x.strip() for x in fine.split(";")])
+            # The official release can repeat a parent for multiple children.
+            # Classification is set-valued; preserve source hash and log deduplication.
+            annotations[aid] = tuple(sorted(set(labels)) for labels in parts)
+            duplicate_counts[aid] = sum(len(labels) - len(set(labels)) for labels in parts)
     base = Path(articles).resolve()
     rows, hashes = [], {}
     for aid in selected:
@@ -138,12 +144,14 @@ def prepare(articles, gold, ids, output, release, note, confirmed):
         # Keep the title as a paragraph; paragraph boundary rule is an explicit deviation.
         paras = [x.strip() for x in re.split(r"\n\s*\n", text.replace("\r\n", "\n")) if x.strip()]
         coarse, fine = annotations[aid]
+        duplicate_label_occurrences += duplicate_counts[aid]
         rows.append({"id": aid, "paragraphs": paras, "gold_coarse": coarse, "gold_fine": fine})
         hashes[aid] = file_hash(source)
     data = {"metadata": {"dataset_kind": "authorized_release", "domain": "URW", "language": "EN",
             "release_name": release, "release_note": note, "paper_test_mapping_confirmed": confirmed,
             "split": "paper_test" if confirmed else "unverified_release",
             "source_gold_sha256": file_hash(gold), "source_ids_sha256": file_hash(ids),
+            "duplicate_gold_label_occurrences_removed": duplicate_label_occurrences,
             "source_article_sha256": hashes,
             "segmentation": "blank-line-separated blocks, title retained; not verified original paragraph boundaries",
             "selection": "explicit IDs; establish domain from approved metadata or human review, not model outcomes"},

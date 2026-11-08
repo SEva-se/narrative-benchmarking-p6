@@ -11,8 +11,8 @@ This is a predefined scope for the proposed first experiment; it remains a team 
 | Main source | PolyNarrative, ACL 2025, section 5 / Appendix C.1 | Same methodological source | Verified |
 | Model | Llama 3.1-70B | User-specified exact provider deployment | Pending; different model is an extension |
 | Languages / domains | BG, EN, PT, RU; CC and URW with uneven coverage | EN / URW | Deliberately narrowed |
-| Data | Paper TEST corresponds to SemEval development | Authorized dev articles and ST2 document gold | Not obtained |
-| Label inventory | Two-level URW taxonomy | Public taxonomy, 11 parents / 38 named children + Other options | Release agreement pending |
+| Data | Paper TEST corresponds to SemEval development | User-supplied dev articles and cleaned ST2 document gold | 17 EN URW articles prepared privately |
+| Label inventory | Two-level URW taxonomy | Public taxonomy, 11 parents / 38 named children + Other options | Matches selected gold and official class lists |
 | Prompt | Appendix C.1, taxonomy only | Transcribed template; ASCII apostrophe; real codebook list substituted | Source-derived, not authors' code |
 | Message roles | Exact API role placement not recovered | Instructions as system, tagged article as user | Declared assumption |
 | Paragraphs | Original paragraph units | Importer splits on blank lines, retaining title | Unverified boundary adaptation |
